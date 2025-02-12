@@ -64,7 +64,7 @@ class _HomeUIState extends State<HomeUI> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => B01PageUI(),
+                    builder: (context) => B01PageUi(),
                   ),
                 );
               },
