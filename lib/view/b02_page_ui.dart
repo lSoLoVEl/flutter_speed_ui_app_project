@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/view/b03_page_ui.dart';
 import 'package:flutter_speed_ui_app/view/home_ui.dart';
 
 class B02PageUI extends StatefulWidget {
@@ -21,7 +22,7 @@ class _B02PageUIState extends State<B02PageUI> {
           child: Column(
             children: [
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.025,
+                height: MediaQuery.of(context).size.height * 0.1,
               ),
               
             
@@ -36,12 +37,15 @@ class _B02PageUIState extends State<B02PageUI> {
                   ),
                 ),
               ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.03,
+              ),
               Align(
                 alignment: Alignment.center,
                 child: Text(
                   "Welcome back you've",
                   style: TextStyle(
-                    fontSize: MediaQuery.of(context).size.height * 0.017,
+                    fontSize: MediaQuery.of(context).size.height * 0.025,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -51,14 +55,14 @@ class _B02PageUIState extends State<B02PageUI> {
                 child: Text(
                   'been missed!',
                   style: TextStyle(
-                    fontSize: MediaQuery.of(context).size.height * 0.017,
+                    fontSize: MediaQuery.of(context).size.height * 0.025,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
               
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.025,
+                height: MediaQuery.of(context).size.height * 0.04,
               ),
               TextField(
                 
@@ -89,7 +93,7 @@ class _B02PageUIState extends State<B02PageUI> {
                 
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.01,
+                height: MediaQuery.of(context).size.height * 0.03,
               ),
               TextField(
                 decoration: InputDecoration(
@@ -122,16 +126,16 @@ class _B02PageUIState extends State<B02PageUI> {
                 child: TextButton(
                   onPressed: () {},
                   child: Text(
-                    'Forgot Password?',
+                    'Forgot your password?',
                     style: TextStyle(
-                      color: const Color.fromARGB(255, 0, 6, 10),
+                      color: const Color.fromARGB(255, 20, 45, 237),
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.015,
+                height: MediaQuery.of(context).size.height * 0.03,
               ),
               ElevatedButton(
                 onPressed: () {
@@ -153,9 +157,9 @@ class _B02PageUIState extends State<B02PageUI> {
                   
                   fixedSize: Size(
                     MediaQuery.of(context).size.width,
-                    50.0,
+                    65,
                   ),
-                  backgroundColor: const Color.fromARGB(255, 17, 11, 130),
+                  backgroundColor: const Color.fromARGB(255, 35, 27, 198),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(
                         7.0), //แนะนำให้ใส่เป้นตัวเลขกำหนดไปเลย
@@ -163,10 +167,43 @@ class _B02PageUIState extends State<B02PageUI> {
                 ),
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.015,
+                height: MediaQuery.of(context).size.height * 0.05,
               ),
-              Text(
-                'Or Sign up with',
+              TextButton(
+                onPressed: () {
+                 Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => B03PageUi(),
+                  ),
+                );
+                },
+                child: Text(
+                'Create new account',
+                style: TextStyle(
+                    fontSize: MediaQuery.of(context).size.height * 0.0175,
+                    fontWeight: FontWeight.bold,
+                    color: const Color.fromARGB(255, 0, 0, 0),),
+                    ),
+              ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.08,
+              ),
+                Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  
+                  TextButton(
+                    onPressed: (){},
+                    child: Text(
+                      'Or continue with',
+                      style: TextStyle(
+                        color: const Color.fromARGB(255, 23, 72, 233),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ],
               ),
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.015,
