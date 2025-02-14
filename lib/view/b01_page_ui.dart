@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_ui_app/view/b02_page_ui.dart';
 import 'package:flutter_speed_ui_app/view/b03_page_ui.dart';
+import 'package:flutter_speed_ui_app/view/home_ui.dart';
 
 class B01PageUi extends StatefulWidget {
   const B01PageUi({super.key});
@@ -16,6 +17,23 @@ class _B01PageUiState extends State<B01PageUi> {
         child: Column(
           
           children: [
+            Align(
+                alignment: Alignment.centerLeft,
+                child: IconButton(
+                  onPressed: () {
+                    Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => HomeUI(),
+                  ),
+                );
+                  },
+                  icon: Icon(
+                    Icons.arrow_back_ios,
+                    size: MediaQuery.of(context).size.height * 0.045,
+                  ),
+                ),
+              ),
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.1,
             ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_ui_app/view/b01_page_ui.dart';
 import 'package:flutter_speed_ui_app/view/b03_page_ui.dart';
 import 'package:flutter_speed_ui_app/view/home_ui.dart';
 
@@ -68,7 +69,11 @@ class _B02PageUIState extends State<B02PageUI> {
                 
                 
                 decoration: InputDecoration(
+                  filled: true,
+                  fillColor: const Color.fromARGB(255, 233, 233, 233),
+
                   enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide(
                       color: Color.fromARGB(255, 110, 109, 109),
                     ),
@@ -97,7 +102,11 @@ class _B02PageUIState extends State<B02PageUI> {
               ),
               TextField(
                 decoration: InputDecoration(
-                    enabledBorder: OutlineInputBorder(
+                    filled: true,
+                  fillColor: const Color.fromARGB(255, 233, 233, 233),
+
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
                       borderSide: BorderSide(
                         color: Color.fromARGB(255, 110, 109, 109),
                       ),
@@ -142,7 +151,7 @@ class _B02PageUIState extends State<B02PageUI> {
                   Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => HomeUI(),
+                    builder: (context) => B01PageUi(),
                   ),
                 );
                 },

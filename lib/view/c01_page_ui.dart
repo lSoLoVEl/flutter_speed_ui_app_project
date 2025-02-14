@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_ui_app/view/c02_page_ui.dart';
+import 'package:flutter_speed_ui_app/view/home_ui.dart';
 
 class C01PageUI extends StatefulWidget {
   const C01PageUI({super.key});
@@ -13,13 +14,16 @@ class _C01PageUIState extends State<C01PageUI> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: GestureDetector(
+        
         onTap: () {
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => C02PageUI()), 
           );
         },
+        
         child: Container(
+          
           width: double.infinity,
           height: double.infinity,
           decoration: BoxDecoration(
@@ -31,7 +35,24 @@ class _C01PageUIState extends State<C01PageUI> {
           child: Center(
             child: Column(
               children: [
-                SizedBox(height: MediaQuery.of(context).size.height * 0.26),
+                Align(
+                alignment: Alignment.centerLeft,
+                child: IconButton(
+                  onPressed: () {
+                    Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => HomeUI(),
+                  ),
+                );
+                  },
+                  icon: Icon(
+                    Icons.arrow_back_ios,
+                    size: MediaQuery.of(context).size.height * 0.045,
+                  ),
+                ),
+              ),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.2),
                 Image.asset(
                   'assets/images/C01.1.png',
                   width: MediaQuery.of(context).size.width * 1,

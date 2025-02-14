@@ -67,7 +67,11 @@ class _B03PageUiState extends State<B03PageUi> {
                 
                 
                 decoration: InputDecoration(
+                  filled: true,
+                  fillColor: const Color.fromARGB(255, 233, 233, 233),
+
                   enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide(
                       color: Color.fromARGB(255, 110, 109, 109),
                     ),
@@ -96,7 +100,11 @@ class _B03PageUiState extends State<B03PageUi> {
               ),
               TextField(
                 decoration: InputDecoration(
-                    enabledBorder: OutlineInputBorder(
+                    filled: true,
+                  fillColor: const Color.fromARGB(255, 233, 233, 233),
+
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
                       borderSide: BorderSide(
                         color: Color.fromARGB(255, 110, 109, 109),
                       ),
@@ -122,7 +130,11 @@ class _B03PageUiState extends State<B03PageUi> {
               TextField(
                 
                 decoration: InputDecoration(
-                    enabledBorder: OutlineInputBorder(
+                    filled: true,
+                  fillColor: const Color.fromARGB(255, 233, 233, 233),
+
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
                       borderSide: BorderSide(
                         color: Color.fromARGB(255, 0, 0, 0),
                       ),

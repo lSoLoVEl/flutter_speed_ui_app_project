@@ -62,7 +62,11 @@ class _C03PageUIState extends State<C03PageUI> {
                 
                 
                 decoration: InputDecoration(
+                  filled: true,
+                  fillColor: const Color.fromARGB(255, 233, 233, 233),
+
                   enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide(
                       color: Color.fromARGB(255, 255, 255, 255),
                     ),
@@ -100,7 +104,11 @@ class _C03PageUIState extends State<C03PageUI> {
                 
                 
                 decoration: InputDecoration(
+                  filled: true,
+                  fillColor: const Color.fromARGB(255, 233, 233, 233),
+
                   enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide(
                       color: Color.fromARGB(255, 255, 255, 255),
                     ),
@@ -135,7 +143,11 @@ class _C03PageUIState extends State<C03PageUI> {
               ),
               TextField(
                 decoration: InputDecoration(
-                    enabledBorder: OutlineInputBorder(
+                    filled: true,
+                  fillColor: const Color.fromARGB(255, 233, 233, 233),
+
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
                       borderSide: BorderSide(
                         color: Color.fromARGB(255, 255, 255, 255),
                       ),
@@ -167,7 +179,11 @@ class _C03PageUIState extends State<C03PageUI> {
               ),
               TextField(
                 decoration: InputDecoration(
-                    enabledBorder: OutlineInputBorder(
+                    filled: true,
+                  fillColor: const Color.fromARGB(255, 233, 233, 233),
+
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
                       borderSide: BorderSide(
                         color: Color.fromARGB(255, 255, 255, 255),
                       ),
